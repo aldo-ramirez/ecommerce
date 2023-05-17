@@ -1,0 +1,35 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 25px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+
+.footer-contact {
+  grid-column: 2/3;
+  text-align: center;
+}
+
+.footer-help {
+  grid-column: 3/4;
+  text-align: center;
+}
+
+.footer-services {
+  grid-column: 4/5;
+  text-align: center;
+}
+
+.footer-about {
+  grid-column: 5/6;
+  text-align: center;
+}
+
+.footer-help ul li,
+.footer-services ul li,
+.footer-about ul li {
+  list-style: none;
+  margin: 10px;
+}

@@ -1,0 +1,45 @@
+.social {
+  margin-top: 200px;
+  position: fixed;
+}
+
+.facebook {
+  background-color: blue;
+  box-shadow: 0 0 15px black;
+}
+
+.youtube {
+  background-color: red;
+  box-shadow: 0 0 15px black;
+}
+
+.twitter {
+  background-color: rgb(40, 103, 238);
+  box-shadow: 0 0 15px black;
+}
+
+.instagram {
+  background-color: indigo;
+  box-shadow: 0 0 15px black;
+}
+
+.social ul li a {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social ul li {
+  width: 60px;
+  transition: all 0.5s;
+  list-style: none;
+}
+
+.facebook:hover,
+.youtube:hover,
+.twitter:hover,
+.instagram:hover {
+  background-color: black;
+  width: 80px;
+}
