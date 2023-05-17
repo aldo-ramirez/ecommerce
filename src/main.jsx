@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./App.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import { Shop } from "./page/shop/Shop";
 import { ShopContextProvider } from "./context/Context";
 import { Cart } from "./page/cart/Cart";
@@ -10,7 +10,7 @@ import Checkoutt from "./page/checkout/Checkoutt";
 import Form from "./page/form/Form";
 
 /*Routes */
-const routing = createBrowserRouter([
+const routing = createHashRouter([
   {
     path: "/",
     element: <App />,
