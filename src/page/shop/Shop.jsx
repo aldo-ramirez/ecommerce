@@ -13,8 +13,8 @@ export const Shop = (id) => {
         <Navbar />
       </div>
       <div className="shopTitle">
-        <Social />
         <h1>AldoTech Shop</h1>
+        <Social />
       </div>
 
       <div className="products">
@@ -23,7 +23,9 @@ export const Shop = (id) => {
         })}
       </div>
       <br />
-      <Footer />
+      <div className="footer">
+        <Footer />
+      </div>
     </div>
   );
 };

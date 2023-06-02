@@ -4,7 +4,12 @@
   margin: 0;
 }
 
+.navbar {
+  width: 100%;
+}
+
 .cart {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,4 +55,16 @@
 
 .amountbutton {
   width: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .cartItem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar {
+    width: 100%;
+  }
 }

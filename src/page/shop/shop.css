@@ -1,19 +1,29 @@
+.shop {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.navbar {
+  width: 100%;
+  grid-column: 1/4;
+}
+
 .shopTitle {
   margin-top: 50px;
   text-align: center;
   font-size: 40px;
+  grid-column: 1/4;
 }
 .products {
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column: 1/4;
 }
-
 .product {
-  border-radius: 15px;
-  width: 300px;
   height: 350px;
   margin: 80px;
   display: flex;
@@ -54,4 +64,63 @@
   background-color: rgb(19, 19, 19);
   color: white;
   cursor: pointer;
+}
+
+.footer {
+  background-color: black;
+  display: grid;
+  color: white;
+  font-size: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column: 1/6;
+  padding: 25px;
+}
+
+.footer-contact {
+  grid-column: 1/2;
+  text-align: center;
+}
+
+.footer-help {
+  grid-column: 2/3;
+  text-align: center;
+}
+
+.footer-services {
+  grid-column: 3/4;
+  text-align: center;
+}
+
+.footer-about {
+  grid-column: 4/5;
+  text-align: center;
+}
+
+.footer-help ul li,
+.footer-services ul li,
+.footer-about ul li {
+  list-style: none;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    width: 100%;
+  }
+  .products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-help,
+  .footer-services,
+  .footer-about {
+    margin: 10px;
+  }
 }
