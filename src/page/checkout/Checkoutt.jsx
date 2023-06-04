@@ -7,6 +7,9 @@ const Checkout = () => {
   const { order, values, getTotalAmount, checkitout } = useContext(ShopContext);
   const navigate = useNavigate();
 
+  //const orderNumber = order();
+  const totalAmountToday = getTotalAmount()
+
   return (
     <div className="checkout">
       <div className="checkout-title">
@@ -24,13 +27,14 @@ const Checkout = () => {
           <li>Contact Phone: {values.phone}</li>
           <li>Email: {values.email}</li>
           <li>
-            Order number: {order}
-            {getTotalAmount}
+          Order number: {order}
+            {totalAmountToday}
           </li>
         </ul>
         <div className="checkout-buttons">
-          <button onClick={checkitout}>Continue to make payment</button>
-          <button onClick={() => navigate("/shop")}>Cancel</button>
+        <button onClick={checkitout}>Continue to make payment</button>
+
+<button onClick={() => navigate("/shop")}>Cancel</button>
         </div>
       </div>
     </div>

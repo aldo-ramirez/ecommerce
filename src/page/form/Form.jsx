@@ -19,6 +19,8 @@ function Form() {
       <div className="form">
         <form
           action="submit"
+          name="aplicationForm"
+          autoComplete="on"
           onSubmit={(e) => {
             e.preventDefault();
             console.log(values);
@@ -47,6 +49,7 @@ function Form() {
             name="name"
             value={values.name}
             onChange={handleChange}
+            autoComplete="name"
           />
           <hr />
           <label htmlFor="lastName">Last name(s):</label>
@@ -56,6 +59,7 @@ function Form() {
             value={values.lastName}
             name="lastName"
             onChange={handleChange}
+            autoComplete="last name"
           />
           <hr />
           <label htmlFor="address">Address:</label>
@@ -65,6 +69,7 @@ function Form() {
             value={values.address}
             name="address"
             onChange={handleChange}
+            autoComplete="address"
           />
           <hr />
           <label htmlFor="city">City/Town:</label>
@@ -74,6 +79,7 @@ function Form() {
             value={values.city}
             name="city"
             onChange={handleChange}
+            autoComplete="City"
           />
           <hr />
           <label htmlFor="state">State/Province/Region:</label>
@@ -83,6 +89,7 @@ function Form() {
             value={values.state}
             name="state"
             onChange={handleChange}
+            autoComplete="State"
           />
           <hr />
           <label htmlFor="zipcode">(5 digit) Postal/Zip Code:</label>
@@ -93,6 +100,7 @@ function Form() {
             name="zipcode"
             maxLength={5}
             onChange={handleChange}
+            autoComplete="zip code"
           />
           <hr />
           <label htmlFor="country">Country:</label>
@@ -102,6 +110,7 @@ function Form() {
             value={values.country}
             name="country"
             onChange={handleChange}
+            autoComplete="country"
           />
           <hr />
           <label htmlFor="phone">(10 digit) Phone Number:</label>
@@ -112,6 +121,7 @@ function Form() {
             name="phone"
             maxLength={10}
             onChange={handleChange}
+            autoComplete="phone"
           />
           <hr />
           <label htmlFor="email">Email:</label>
@@ -121,6 +131,7 @@ function Form() {
             value={values.email}
             name="email"
             onChange={handleChange}
+            autoComplete="email"
           />
           <hr />
           <button type="submit">Save and Continue</button>

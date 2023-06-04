@@ -70,6 +70,16 @@ export const ShopContextProvider = (props) => {
     return totalAmount;
   };
 
+  const getIconNumber = () => {
+    let iconNumber = 0;
+    for(let item in cartItems) {
+      if (cartItems[item] > 0) {
+        iconNumber += cartItems[item];
+      }
+    }
+    return iconNumber;
+  }
+
   const checkitout = () => {
     alert("You are being redirected to make your payment");
   };
@@ -90,6 +100,7 @@ export const ShopContextProvider = (props) => {
     handleChange,
     values,
     evaluations,
+    getIconNumber,
   };
 
   return (
